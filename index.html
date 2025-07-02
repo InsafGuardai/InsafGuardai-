@@ -2,24 +2,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InsafGuard AI - Demo</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InsafGuard AI - Real MVP</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>InsafGuard AI</h1>
-        <p>Empowering Industry Safety Through Smart AI</p>
-    </header>
-    <section>
-        <h2>Live Compliance Risk Checker</h2>
-        <button onclick="checkRisk()">Run AI Compliance Check</button>
-        <p id="result"></p>
-    </section>
-    <footer>
-        <p>&copy; 2025 InsafGuard AI | Founder: Vidya Ohol</p>
-    </footer>
-    <script src="script.js"></script>
+  <header>
+    <h1>InsafGuard AI</h1>
+    <p>Smart Compliance Checker - MVP</p>
+  </header>
+
+  <main>
+    <label for="industry">Select Industry:</label>
+    <select id="industry">
+      <option value="construction">Construction</option>
+      <option value="manufacturing">Manufacturing</option>
+      <option value="chemical">Chemical</option>
+      <option value="warehouse">Warehouse</option>
+    </select>
+
+    <label for="input">Enter Safety Compliance Data:</label>
+    <textarea id="input" placeholder="Paste compliance data here..."></textarea>
+
+    <button onclick="runCheck()">Run AI Compliance Check</button>
+    <div id="result"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 InsafGuard AI | Founder: Vidya Ohol</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
