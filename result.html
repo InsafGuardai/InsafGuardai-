@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result - InsafGuard AI</title>
+</head>
+<body>
+    <h1>Analysis Result</h1>
+    <p><strong>Input:</strong></p>
+    <pre>{{ text }}</pre>
+    <h2>Industry Flags:</h2>
+    <ul>
+        {% for industry, found in result.items() %}
+            <li><strong>{{ industry|capitalize }}:</strong> {{ '✅ Relevant' if found else '❌ Not relevant' }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back</a>
+</body>
+</html>
